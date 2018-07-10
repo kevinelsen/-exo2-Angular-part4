@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercice 2</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </head>
+  <body ng-app="testApp">
+    <div ng-controller="marqueCtrl">
+    <table cellspacing="2px" cellpadding="2px;" rules="all" style="border:solid 1px black">
+      <thead>
+         <th>Marque</th>
+         <th>Couleur</th>
+    </thead>
+     <tr ng-repeat="voitures in voiture">
+      <td>
+          {{voitures.marque}}
+      </td>
+      <td>
+          {{voitures.couleur}}
+      </td>
+    </tr>
+  </table>
+</div>
+  </body>
+</html>
